@@ -6,4 +6,4 @@ require("connexion.php");
 $repas = $_POST["repas_midi"];
 $nuit = $_POST["nuitees"];
 $etape = $_POST["etape"];
-$km = $_POST["km"];
+$km = $_POST[""];
