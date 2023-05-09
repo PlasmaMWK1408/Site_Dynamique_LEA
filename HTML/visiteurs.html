@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Service Visiteurs</title>
+</head>
+<body>
+    <section class="page">
+        <!-- Barre de navigation -->
+        <nav>
+          <div class="logo">
+            <img src="../IMAGES/Logo_GSB.png" alt="logo GSB">
+            <h4>
+              Votre laboratoire GSB a votre service
+            </h4>
+          </div>
+          <div class="compte">
+            <img src="../IMAGES/logo_visteurs.png" alt="logo visiteurs">
+            <h4>
+              Veuillez vous connecter
+            </h4>
+          </div>
+        </nav>
+      <!-- Fin de la barre de navigation -->
+    
+    <!-- Header-->
+    <header class="page_visiteurs">
+        
+    <div class="container">
+        <form action="" method="post">
+            <h2>Saisie</h2>
+            <div class="horsForfait">
+                <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+                <script>
+                  $(function() {
+                    $("#datepicker").datepicker();
+                  });
+                </script>
+              </head>
+              <body>
+                <label for="datepicker">Choisissez une date :</label>
+                <input type="text" id="datepicker">
+                
+            </div>
+            <br>
+            <h1>Frais au forfait</h1>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Repas midi</td>
+                  <td><input type="text" name="repas_midi" /></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Nuitées</td>
+                  <td><input type="text" name="nuitees" /></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Étape</td>
+                  <td><input type="text" name="etape" /></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Kilométrage</td>
+                  <td><input type="text" name="km" /></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <div class="form-control">
+                <button type="submit">Valider</button>
+                <h4><a href="hors_forfait.html">Accéder ici au formulaire hors forfait</a></h4>
+                <p id="error-message" class="hidden"><b>Veuillez remplir tous les champs</b></p>
+            </div>
+            
+            
+            
+            
+            </form>
+    </div>
+    <script src="../JS/connexion.js"></script>
+    </header>
+    <!-- Fin du header -->
+        
+    <!-- Informations -->
+        
+        <!-- Fin des informations -->
+      </section>
+      
+      <!-- Pied de page -->
+      <footer>
+          <h5>Des questions ? Appelez le 0474-998-740</h5>
+          <div class="colonnes">
+            <div class="colonne">
+              <p>Relations clients</p>
+              <p>Relations Investisseurs</p>
+              <p>Modes de lecture</p>
+              <p>Mentions légales</p>
+            </div>
+            <div class="colonne">
+              <p>Centre d'aide</p>
+              <p>Les meilleurs graphistes</p>
+              <p>Entreprise mondiale</p>
+              <p>Chiffre d'affaire</p>
+              <p>Les meilleurs peintres</p>
+            </div>
+            <div class="colonne">
+              <p>FAQ</p>
+              <p>Recrutement</p>
+              <p>Conditions d'utilisation</p>
+              <p>Nous contacter</p>
+            </div>
+            <div class="colonne">
+              <p>Compte</p>
+              <p>S'enregistrer</p>
+              <p>Se connecter</p>
+              <p>Nous contacter</p>
+            </div>
+          </div>
+          
+        </footer>
+      <!-- Fin du pied de page -->
+</body>
+</html>

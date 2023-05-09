@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.cdnfonts.com/css/kollektif');
+
+
+* {
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 0%;
+}
+nav {
+  background-color: #fff;
+  width: 100%;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  float: left;
+  height: 60px;
+  padding: 20px 20px;
+}
+
+.logo img {
+  margin-left: 30px;
+  margin-top: 10px;
+  height: 100%;
+  transform: scale(1.9);
+}
+
+.logo h4{
+  font-family: 'Kollektif', sans-serif;
+  font-size: large;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.compte {
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.compte h4{
+  font-family: 'Kollektif', sans-serif;
+  margin-left: 30px;
+  margin-top: 45px;
+}
+
+/* Fin de la barre de nav */
+/* Début de la page principale */
+
+header {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kollektif', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Changement des images de fond des différentes pages */
+.page_acceuil{
+  background-image: url('../IMAGES/fond2.jpg');
+  background-size: cover;
+}
+
+.page_visiteurs{
+  background-image: url('../IMAGES/fond_visiteurs2.png');
+  background-size: cover;
+}
+
+.page_comptable{
+  background-image: url('../IMAGES/fond_comptable.jpg');
+  background-size: cover;
+}
+
+
+
+.container {
+  width: 300px;
+  height: 500px;
+  padding: 20px;
+  background-color: #E8EDF1;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5%;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Kollektif', sans-serif;
+  font-size:xx-large;
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Kollektif', sans-serif;
+  font-size:x-large;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+.form-control a {
+  
+  color: #16649E;
+  font-family: 'Kollektif', sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #16649E;
+  font-size: 16px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+button[type="submit"] {
+  margin-top: 30px;
+  font-family: 'Kollektif', sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #16649E;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#error-message {
+  color: red;
+  margin-top: 10px;
+  font-family: 'Kollektif', sans-serif;
+}
+
+/* Fin de la page principale */
+/* Pied de page */
+
+footer{
+  background-color: #1a1a1a;
+  padding: 25px 100px;
+  color:#828282;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+footer .colonnes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Fin du pied de page */
+
+@media screen and (max-width: 640px){
+  body .page{
+    margin: 10px;
+  }
+  nav .onglets{
+    display:none;
+  }
+  header{
+    margin-top: 20px;
+    background-size: 250px 250px;
+  }
+  header h1{
+    font-size: 30px;
+    padding: 100px;
+  }
+}

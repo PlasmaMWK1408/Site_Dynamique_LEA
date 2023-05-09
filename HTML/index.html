@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Acceuil</title>
+</head>
+<body>
+    <section class="page">
+        <!-- Barre de navigation -->
+        <nav>
+          <div class="logo">
+            <img src="../IMAGES/Logo_GSB.png" alt="logo GSB">
+            <h4>
+              Votre laboratoire GSB a votre service
+            </h4>
+          </div>
+          <div class="compte">
+            <img src="../IMAGES/logo_profil.png" alt="logo profil">
+            <h4>
+              Veuillez vous connecter
+            </h4>
+          </div>
+        </nav>
+      <!-- Fin de la barre de navigation -->
+    
+    <!-- Header -->
+    <header class="page_acceuil">
+    <div class="container">
+      <h1>Bienvenue sur le site officiel du Laboratoire GSB</h1>
+      <form action="../PHP/requete.php" id="login-form" method="POST" >
+        <h2>Connexion</h2>
+        <div class="form-control">
+          <label for="username">Nom d'utilisateur :</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-control">
+          <label for="password">Mot de passe :</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-control">
+          <button type="submit">Valider</button>
+        </div>
+        <p id="error-message" class="hidden"><b>Veuillez remplir tous les champs</b></p>
+      </form>
+    </div>
+    </header>
+    <!-- Fin du header -->
+        
+    <!-- Informations -->
+        
+        <!-- Fin des informations -->
+      </section>
+      
+      <!-- Pied de page -->
+      <footer>
+          <h5>Des questions ? Appelez le 0474-998-740</h5>
+          <div class="colonnes">
+            <div class="colonne">
+              <p>Relations clients</p>
+              <p>Relations Investisseurs</p>
+              <p>Modes de lecture</p>
+              <p>Mentions légales</p>
+            </div>
+            <div class="colonne">
+              <p>Centre d'aide</p>
+              <p>Les meilleurs graphistes</p>
+              <p>Entreprise mondiale</p>
+              <p>Chiffre d'affaire</p>
+              <p>Les meilleurs peintres</p>
+            </div>
+            <div class="colonne">
+              <p>FAQ</p>
+              <p>Recrutement</p>
+              <p>Conditions d'utilisation</p>
+              <p>Nous contacter</p>
+            </div>
+            <div class="colonne">
+              <p>Compte</p>
+              <p>S'enregistrer</p>
+              <p>Se connecter</p>
+              <p>Nous contacter</p>
+            </div>
+          </div>
+         
+        </footer>
+      <!-- Fin du pied de page -->
+</body>
+</html>
